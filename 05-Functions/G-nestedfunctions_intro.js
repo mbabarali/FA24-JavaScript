@@ -56,3 +56,4 @@ function printCustomMessage(msg) {
 }
 
 printCustomMessage("Good Evening.");
+// doPrint(); // [Reference Error]

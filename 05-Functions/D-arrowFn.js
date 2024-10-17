@@ -53,3 +53,32 @@ console.log("-------------------------------------");
 arrFunc = () => (a = 5); // Expression body syntax --> single statement is implicity a return statement
 retVal = arrFunc();
 console.log(retVal);
+
+console.log("==============================================");
+() => 5; // Implicit return with value
+console.log((() => 5)());
+
+() => (a = 1); // Implicit return with value
+
+() => {
+  a = 1;
+  // Implicit return 'undefined'
+};
+
+() => {
+  a = 1;
+  b = 2;
+  c = a + b;
+  // Implicit return 'undefined'
+};
+
+console.log("==============================================");
+() => {
+  return (a = 1); // Explicit return with value
+};
+
+() => {
+  a = 1;
+  b = 2;
+  return (c = a + b); // Explicit return with value
+};

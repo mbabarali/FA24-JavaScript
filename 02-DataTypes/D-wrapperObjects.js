@@ -93,3 +93,14 @@ console.log(String.valueOf(str4) + " --> Type: " + typeof String.valueOf(str4));
 console.log(String.valueOf(str3) + " --> Type: " + typeof String.valueOf(str3)); // Returns string primitive from String object using method valueOf()
 console.log(String.valueOf(str1) + " --> Type: " + typeof String.valueOf(str1)); // Returns string primitive from String object using method valueOf()
 console.log(String.valueOf(str2) + " --> Type: " + typeof String.valueOf(str2)); // Returns string primitive from String object using method valueOf()
+
+console.log("==============================================");
+console.log("================== BOOLEAN ===================");
+let a = 5;
+let b = Boolean(a > 0); // Returns boolean primitive
+console.log(typeof b);
+
+// -----------------------------
+let aa = 5;
+let bb = new Boolean(a > 0); // Returns Boolean object
+console.log(typeof b);
