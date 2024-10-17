@@ -50,7 +50,7 @@ console.log(getCounter());
 console.log("==============================================");
 // PRIVATE variable with nested functions (i.e. benefiting from closure)
 function createCounter(initialValue) {
-  let counterValue = initialValue;
+  let counterValue = initialValue; // counterValue is private
 
   // [WARNING] Avoid creating methods directly. Insteadm use prototype object to avoid duplication.
 

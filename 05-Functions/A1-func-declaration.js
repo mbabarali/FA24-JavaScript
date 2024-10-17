@@ -50,7 +50,7 @@ function show() {
   console.log("[show] Work hard.");
 }
 
-// console.log(logger); // [ERROR] Function reference before FUNCTION DECLARATION
+// console.log(logger); // [ERROR] Function reference before variable with FUNCTION DECLARATION
 // console.log(typeof logger); // [ERROR] Not hoisted [REASON: let/var INITIALIZATIONs are not hoisted].
 // console.log(logger); // [ERROR] Not hoisted [REASON: let/var INITIALIZATIONs are not hoisted].
 
@@ -58,12 +58,12 @@ function show() {
 // logger(); // [ERROR] Not hoisted [REASON: let/var INITIALIZATIONs are not hoisted].
 
 console.log("-------------------------------------");
-let logger = print; // Function declaration assigned to another variable
+let logger = show; // Function declaration assigned to another variable
 
 console.log("-------------------------------------");
 console.log(logger); // See in Browser Console
-console.log(typeof logger); // Function reference after FUNCTION DECLARATION
-console.log("Function Name ---> ", logger.name); // "name" property of Function
+console.log(typeof logger); // Function reference after variable with FUNCTION DECLARATION
+console.log("Function Name ---> ", logger.name); // "name" property of variable with FUNCTION DECLARATION
 
 console.log("-------------------------------------");
 logger; // Do nothing

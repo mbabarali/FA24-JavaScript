@@ -56,24 +56,24 @@ console.log("-------------------------------------");
 // console.log(firstName in a); // [ReferenceError: firstName is not defined]
 
 console.log("-------------------------------------");
-console.log(a.surName); // Accessing non-exising property
-console.log(a.address); // Accessing non-exising property
+console.log(a.surName); // Accessing non-existing property
+console.log(a.address); // Accessing non-existing property
 
 console.log("-------------------------------------");
-// console.log(a.address.houseNo); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+// console.log(a.address.houseNo); // Accessing property on non-existing property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
 
 console.log("-------------------------------------");
-console.log(a.address && a.address.houseNo); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+console.log(a.address && a.address.houseNo); // RESTRCTED access to property ('houseNo') on non-existing property ('address')
 
 console.log("-------------------------------------");
-// a.address(); // Accessing non-exising method // TypeError: a.address is not a function
+// a.address(); // Accessing non-existing method // TypeError: a.address is not a function
 
 console.log("-------------------------------------");
 a.address = function () {
   return "Your address!";
 };
-console.log(a.address && a.address()); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+console.log(a.address && a.address()); // Accessing property on non-existing property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
 
 console.log("-------------------------------------");
 a.address = null;
-console.log(a.address && a.address.houseNo); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+console.log(a.address && a.address.houseNo); // Accessing property on non-existing property [TypeError: Cannot read properties of undefined (reading 'houseNo')]

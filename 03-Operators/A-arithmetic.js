@@ -11,7 +11,7 @@
  %	    Modulus (Remainder)
  ++	    Increment
  --	    Decrement
- +	    Addition/ Concatination
+ +	    Addition/ Concatenation
 ----------------------------------
 Operator Precedence
 ==================================
@@ -100,12 +100,12 @@ console.log(c, " ---> ", typeof c);
 c = 4 + 3;
 console.log(c, " ---> ", typeof c);
 
-// Concatination {Numeric String and String}
+// Concatenation {Numeric String and String}
 console.log("-------------------------------------");
 a = "5"; //Numeric String
 b = 10;
 
-// [CONCAT] Concatination because any of the operands is either "String" or "String" literal
+// [CONCAT] Concatenation because any of the operands is either "String" or "String" literal
 c = "25" + "25";
 console.log(c, " ---> ", typeof c);
 
@@ -121,12 +121,12 @@ console.log(c, " ---> ", typeof c);
 c = b + a;
 console.log(c, " ---> ", typeof c);
 
-// Concatination {Non-numeric String and String}
+// Concatenation {Non-numeric String and String}
 console.log("-------------------------------------");
 s = "programming"; //Non-numeric String
 n = 15;
 
-// [CONCAT] Concatination because any of the operands is either "String" or "String" literal
+// [CONCAT] Concatenation because any of the operands is either "String" or "String" literal
 c = s + n;
 console.log(c, " ---> ", typeof c);
 

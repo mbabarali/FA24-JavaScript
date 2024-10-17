@@ -37,11 +37,11 @@ console.log(str);
 console.log(typeof str);
 
 console.log("-------------------------------------");
-str = greeting + " Mr Khan"; // Concatination BRFORE ES6 uses + operator // String literal
+str = greeting + " Mr Khan"; // Concatenation BRFORE ES6 uses + operator // String literal
 console.log(str);
 console.log(typeof str);
 
-str = `${greeting} Mr Khan`; // Concatination since ES6 using string template and string interpolation // String template
+str = `${greeting} Mr Khan`; // Concatenation since ES6 using string template and string interpolation // String template
 console.log(str);
 console.log(typeof str);
 

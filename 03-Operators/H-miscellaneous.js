@@ -29,11 +29,11 @@ a = {
   age: 20,
 };
 
-// console.log(a.surName); // Accessing non-exising property
-// console.log(a.address); // Accessing non-exising property
+// console.log(a.surName); // Accessing non-existing property
+// console.log(a.address); // Accessing non-existing property
 
 console.log("-------------------------------------");
-// console.log(a.address.houseNo); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+// console.log(a.address.houseNo); // Accessing property on non-existing property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
 
 console.log("-------------------------------------");
 a.address = ""; // Falsy
@@ -58,11 +58,11 @@ a = {
   age: 20,
 };
 
-console.log(a.surName); // Accessing non-exising property
-console.log(a.address); // Accessing non-exising property
+console.log(a.surName); // Accessing non-existing property
+console.log(a.address); // Accessing non-existing property
 
 console.log("-------------------------------------");
-// console.log(a.address.houseNo); // Accessing property on non-exising property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
+// console.log(a.address.houseNo); // Accessing property on non-existing property [TypeError: Cannot read properties of undefined (reading 'houseNo')]
 
 console.log("-------------------------------------");
 console.log(a.address?.houseNo);
@@ -93,7 +93,7 @@ a = {
   age: 20,
 };
 
-console.log(a.surName); // Accessing non-exising property
+console.log(a.surName); // Accessing non-existing property
 
 console.log("-------------------------------------");
 a.firstName ??= "Babar"; // Assignment NOT performed.

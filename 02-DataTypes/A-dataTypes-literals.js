@@ -139,9 +139,9 @@ console.log(newObj.lastName);
 console.log(newObj["firstName"]);
 console.log(newObj["lastName"]);
 
-objPropery = "firstName";
-objPropery = "id";
-console.log(newObj[objPropery]);
+objProperty = "firstName";
+objProperty = "id";
+console.log(newObj[objProperty]);
 
 console.log("-------------------------------------");
 let employee = newObj; // Assignemnt of an object will not create copy. Both are reference to same object.
@@ -201,15 +201,15 @@ objFn(); // [WRONG-OUTPUT]: undefined --> Binding problem with "this"
 
 console.log("==============================================");
 console.log("=============== undefined ====================");
-let u; // Only occupied by undefined value
+let u; // Only occupied by undefined value [Single Choice]
 console.log("u = ", u); // undefined ==>  absence of value, usually implicit
 console.log(typeof u);
 
 // let uu;      --> value undefined, type undefined
-// let uu ="";  --> string <empty>, type string
+// let ss ="";  --> string <empty>, type string
 
 console.log("==============================================");
 console.log("================== null ======================");
-let n = null; // Only occupied by null value
+let n = null; // Only occupied by null value [Single Choice]
 console.log("n = ", n); // null ==>  absence of object, usually explicitly stated
 console.log(typeof n); // Object

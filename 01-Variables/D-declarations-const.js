@@ -32,9 +32,10 @@ console.log("-------------------------------------");
 houseNo = 25; // First use
 console.log(houseNo);
 console.log(typeof houseNo);
-// var houseNo; // First Declaration after first use: Permitted with "var" [No error and no change in value, REASON: "var declarations" Hoisted to top]
 // let houseNo; // [ERROR] First Declaration after first use: RESTRICTED with "let" [ReferenceError ERROR: Must declare variable first before use, REASON: "let declarations" are Hoisted to top of the BLOCK but you can not use "let variable" before initialization]
 // const houseNo; // [ERROR] First Declaration after first use: RESTRICTED with "const" [Syntax ERROR: Must declare with assignemnt (initialize) first before use, REASON: "const declarations" NOT Hoisted]
+// const houseNo = "25"; // [ERROR] First Declaration after first use: RESTRICTED with "const" [Syntax ERROR: Must declare with assignemnt (initialize) first before use, REASON: "const declarations" NOT Hoisted]
+var houseNo = "Twenty-Five"; // First Declaration after first use: Permitted with "var" [No error and no change in value, REASON: "var declarations" Hoisted to top]
 console.log(houseNo);
 console.log(typeof houseNo);
 
@@ -50,7 +51,7 @@ console.log(student);
 console.log(typeof student);
 
 console.log("-------------------------------------");
-student["name"] = "Khan"; // Reassignment to properties/mehtods PERMITTED with const declared object
+student["name"] = "Khan"; // Reassignment to properties/methods PERMITTED with const declared object
 console.log(student);
 console.log(typeof student);
 

@@ -28,7 +28,7 @@ class PublicTransport {
   #ownerContactNumber;
 
   constructor(tt, vpc, rn, owner, contact) {
-    // this.transportType = tt; // Instance Property
+    // this.transportType = tt; // It will create Instance Property
 
     // PublicTransport.transportType = tt; // Static Property
     this.constructor.transportType = tt; // Static Property

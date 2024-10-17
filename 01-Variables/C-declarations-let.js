@@ -40,7 +40,7 @@ console.log("-------------------------------------");
 let m; // First declaration
 console.log(m);
 console.log(typeof m);
-// let m; // [ERROR] Second declaration -- Redeclaration of let variable with "let", "var" or "const" is RESTRICTED
+// let m; // [ERROR] Second declaration -- Redeclaration of let variable with either "let", "var" or "const" is RESTRICTED
 
 console.log("-------------------------------------");
 z = 360;
@@ -70,7 +70,7 @@ console.log(student);
 console.log(typeof student);
 
 console.log("-------------------------------------");
-student["name"] = "Babar"; // Reassignment to properties/mehtods PERMITTED with let declared object
+student["name"] = "Babar"; // Reassignment to properties/methods PERMITTED with let declared object
 console.log(student);
 console.log(typeof student);
 

@@ -121,8 +121,9 @@ let bike2 = createBike("Yamaha", 2023, "black", 120, 6);
 let bike3 = createBike("Suzuki", 2017, "red", 120, 3);
 
 /**
+ - Duplicate properties as well as methods in each object
  - You will see 'getAvailability' method in each of the follwoing object i.e., duplicate 'getAvailability' method in each object.
- - Duplicate due to independent objects which lacks inheritance (aka prototype chain)
+ - Duplicate due to independent objects which lacks proper inheritance (aka prototype chain)
  - In Browser Console, you can see [[proptotype]]
  */
 console.log("bike1 = ", bike1); // log object  // See in Browser Console
@@ -166,8 +167,9 @@ let bikeFromProto2 = createBikeFromPrototype("Yamaha", 2023, "black", 120, 6);
 let bikeFromProto3 = createBikeFromPrototype("Suzuki", 2017, "red", 120, 3);
 
 /**
+ - Duplicate properties as well as methods in each object
  - You will see 'getAvailability' method in each of the follwoing object i.e., duplicate 'getAvailability' method in each object.
- - Duplicate due to independent objects which lacks inheritance (aka prototype chain)
+ - Duplicate due to independent objects which lacks proper inheritance (aka prototype chain)
  - In Browser Console, you can see [[proptotype]]
  */
 console.log("bikeFromProto1 = ", bikeFromProto1); // log object  // See in Browser Console

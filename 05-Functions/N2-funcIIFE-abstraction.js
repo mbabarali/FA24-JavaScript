@@ -49,10 +49,10 @@ console.log(getCounter());
 
 console.log("==============================================");
 
-function createCounter(initialState) {
-  let counterState = initialState;
+function createStateCounter(initialState) {
+  let counterState = initialState; // counterState is private
 
-  // [WARNING] Avoid creating methods directly. Insteadm use prototype object to avoid duplication.
+  // [WARNING] Avoid creating methods directly. Instead use prototype object to avoid duplication.
 
   function setCounter(setState) {
     counterState = setState;
@@ -77,6 +77,28 @@ function createCounter(initialState) {
   function decrementBy(value) {
     counterState -= value;
   }
+
+  /*
+  function performAction(action) {
+    switch (action.type) {
+      case "set":
+        setCounter(action.payload);
+        break;
+      case "get":
+        return getCounter();
+      case "increment":
+        if (payload) incrementBy(action.payload);
+        else increment();
+        break;
+      case "decrement":
+        if (payload) decrementBy(action.payload);
+        else decrement();
+        break;
+      default:
+        break;
+    }
+  }
+  */
 
   function performAction(action) {
     switch (action.type) {
@@ -103,10 +125,19 @@ function createCounter(initialState) {
     }
   }
 
+  //   return {
+  //     setCounter,
+  //     getCounter,
+  //     increment,
+  //     decrement,
+  //     incrementBy,
+  //     decrementBy,
+  //   };
+
   return performAction;
 }
 
-const counterOneActionDispatcher = createCounter(1000);
+const counterOneActionDispatcher = createStateCounter(1000);
 counterOneActionDispatcher({ type: "set", payload: 50 });
 counterOneActionDispatcher({ type: "add", payload: 10 });
 counterOneActionDispatcher({ type: "increment" });
@@ -118,8 +149,8 @@ counterState = 5000; // Some other global variable
 console.log(counterOneActionDispatcher({ type: "get" }));
 
 console.log("-------------------------------------");
-const counterTwoActionDispatcher = createCounter(2000);
-const counterThreeActionDispatcher = createCounter(3000);
+const counterTwoActionDispatcher = createStateCounter(2000);
+const counterThreeActionDispatcher = createStateCounter(3000);
 
 console.log(counterTwoActionDispatcher({ type: "get" }));
 console.log(counterThreeActionDispatcher({ type: "get" }));

@@ -24,11 +24,11 @@ Anonymous function expression, Immediately Invoked Function Expression (IIFE)
 console.log("==============================================");
 
 // Normal function ----> Re-useable function i.e., Re-useable code
-const logerFE = function () {
+const loggerFE = function () {
   console.log("Hi! I am function -- Invoked now.");
 };
 
-logger();
+loggerFE();
 
 console.log("-------------------------------------");
 // IIFE -- Syntax 1 (A) -- function keyword

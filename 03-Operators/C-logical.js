@@ -65,7 +65,7 @@ console.log(a && b && 0 > 3 && "false" && { id: "1" }); // (truthy && truthy && 
 console.log(a && b && "tiger" && "false" && { id: "1" }); // (truthy && truthy && truthy && truthy && truthy) ==> All truthy, return last operand
 
 console.log("-------------------------------------");
-var resultFromAND = a && b && 1 && "tiger" && { id: "1" }; // {Preffered values last in a chain}
+var resultFromAND = a && b && 1 && "tiger" && { id: "1" }; // {Preferred values last in a chain}
 console.log(resultFromAND);
 
 let count = 0;
@@ -104,7 +104,7 @@ console.log(resultFromOR);
 var resultFromOR = 0 > 3 || "0 > 3" || a || "false" || { id: "1" }; // String is truthy
 console.log(resultFromOR);
 
-var resultFromOR = { id: "1" } || a || b || "tiger" || "false"; // {Preffered values early in a chain}
+var resultFromOR = { id: "1" } || a || b || "tiger" || "false"; // {Preferred values early in a chain}
 console.log(resultFromOR);
 
 console.log("-------------------------------------");

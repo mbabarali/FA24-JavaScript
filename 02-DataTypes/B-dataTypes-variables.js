@@ -153,7 +153,7 @@ objPropery = "id";
 console.log(newObj[objPropery]);
 
 // -----------------------------
-let employee = newObj; // Assignemnt of an object will not create copy. Both are reference to same object.
+let employee = newObj; // Assignment of an object will not create copy. Both are reference to same object.
 employee.firstName = "Muhammad";
 console.log(newObj);
 console.log(employee);
